@@ -1,0 +1,18 @@
+Changes
+v1.0:	initial version
+v1.05:	bug fixes
+v1.1:	Stable Version
+v1.11   Formatting Changes
+        splunku.sh:		added notifications for removal of the upgrade file
+		splunkget.sh:	spelling corrections in the comments
+v1.12	4/20/2013
+		Updated version #'s
+		splunkget.sh	corrected some incorrect links
+						changed formatting
+		splunku.sh		changed formatting
+v1.13	7/20/13
+		splunkget.sh	changed link for splunku.sh
+                        added newline arguments for the upgrade confirmation
+		splunku.sh		changed download to be in the background and support resumes
+						changed file checking
+						added md5 check for installer
