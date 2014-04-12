@@ -1,7 +1,7 @@
 #!/bin/bash
  
 # Created by Michael Chamberland
-# Site: http://www.aramblinggeek.com
+# Site: http://www.aramblinggeek.com/shell-script-splunk-syslog-server-update-script/
 
 if [ ! -f 'splunku.sh' ]
     then
