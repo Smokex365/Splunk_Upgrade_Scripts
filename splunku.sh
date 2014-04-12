@@ -1,7 +1,7 @@
 #!/bin/bash
  
 # Created by Michael Chamberland
-# Site: http://aramblinggeek.wordpress.com
+# Site: http://www.aramblinggeek.com/shell-script-splunk-syslog-server-update-script/
 # Version: 1.13
 # Last Updated: 4/20/2013 6:45PM
 # What it does: Checks for the upgrade file. If not found it downloads
