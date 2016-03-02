@@ -14,7 +14,7 @@
 # retrieve the latest version without requiring a new link for each release.
  
 # Full Link
-sdl='http://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=6.3.3&product=splunk&filename=splunk-6.3.3-f44afce176d0-linux-2.6-x86_64.rpm&wget=true'
+sdl='http://download.splunk.com/products/splunk/releases/6.3.3/splunk/linux/splunk-6.3.3-f44afce176d0-linux-2.6-x86_64.rpm'
 md5dl='http://download.splunk.com/products/splunk/releases/6.3.3/splunk/linux/splunk-6.3.3-f44afce176d0-linux-2.6-x86_64.rpm.md5'
 # File Name
 si='splunk-6.3.3-f44afce176d0-linux-2.6-x86_64.rpm'
