@@ -3,7 +3,7 @@
 # Created by Michael Chamberland
 # Site: http://www.aramblinggeek.com/shell-script-splunk-syslog-server-update-script/
 # Version: 1.13
-# Last Updated: 4/20/2013 6:45PM
+# Last Updated: 3/2/2016 5:12AM
 # What it does: Checks for the upgrade file. If not found it downloads
 # the latest version indicated by the sdl and si variables and runs the
 # upgrade: If the file is present it runs the upgrade.
@@ -14,11 +14,11 @@
 # retrieve the latest version without requiring a new link for each release.
  
 # Full Link
-sdl='http://www.splunk.com/page/download_track?file=5.0.4/splunk/linux/splunk-5.0.4-172409-linux-2.6-intel.deb&ac=&wget=true&name=wget&typed=releases&elq=9dfb1435-edc1-4a49-8552-50166f16eecf'
-md5dl='http://www.splunk.com/page/download_track?file=5.0.4/splunk/linux/splunk-5.0.4-172409-linux-2.6-intel.deb.md5&ac=&wget=true&name=wget&typed=releases'
+sdl='http://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=6.3.3&product=splunk&filename=splunk-6.3.3-f44afce176d0-linux-2.6-x86_64.rpm&wget=true'
+md5dl='http://download.splunk.com/products/splunk/releases/6.3.3/splunk/linux/splunk-6.3.3-f44afce176d0-linux-2.6-x86_64.rpm.md5'
 # File Name
-si='splunk-5.0.4-172409-linux-2.6-intel.deb'
-md5='splunk-5.0.4-172409-linux-2.6-intel.deb.md5'
+si='splunk-6.3.3-f44afce176d0-linux-2.6-x86_64.rpm'
+md5='splunk-6.3.3-f44afce176d0-linux-2.6-x86_64.rpm.md5'
  
 # Checks for the Splunk file
 if [ ! -e $si ]
@@ -30,7 +30,7 @@ if [ ! -e $si ]
              
         # Runs upgrade
         /opt/splunk/bin/splunk stop
-        dpkg -i $si
+        rpm -U $si
         # Default is to accept license and ignore configuration checks
         /opt/splunk/bin/splunk start --accept-license --answer-yes
         echo "Removing File"
@@ -39,7 +39,7 @@ if [ ! -e $si ]
         done
     else
         /opt/splunk/bin/splunk stop
-        dpkg -i $si
+        dpkg -U $si
         # Default is to accept license and ignore configuration checks
         /opt/splunk/bin/splunk start --accept-license --answer-yes
         echo "Removing File"
