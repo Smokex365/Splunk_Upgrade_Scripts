@@ -2,7 +2,7 @@
  
 # Created by Michael Chamberland
 # Site: http://www.aramblinggeek.com/shell-script-splunk-syslog-server-update-script/
-# Version: 1.13
+# Version: 1.14
 # Last Updated: 3/2/2016 5:12AM
 # What it does: Checks for the upgrade file. If not found it downloads
 # the latest version indicated by the sdl and si variables and runs the
