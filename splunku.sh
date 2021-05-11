@@ -1,6 +1,6 @@
 #!/bin/bash
  
-# Created by Michael Chamberland
+# Created by Michael
 # Site: http://www.aramblinggeek.com/shell-script-splunk-syslog-server-update-script/
 # Version: 1.14
 # Last Updated: 3/2/2016 5:12AM
